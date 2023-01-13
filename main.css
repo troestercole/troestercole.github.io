@@ -14,7 +14,11 @@ h1 {
 p {
     font-family: neue-haas-grotesk-display, sans-serif;
     font-weight: 400;
-    font-size: 1xem;
+    font-size: 1em;
+}
+
+a {
+    transition: all 0.5s;
 }
 
 /* Hero */
@@ -54,7 +58,7 @@ div.hero-container > div.row {
 div.hero-container div.hero-text {
     color: black;
     background-color: white;
-    padding: 30px;
+    padding: 30px 8vw 30px 30px;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -75,6 +79,17 @@ div.hero-container div.hero-text span.sub-heading {
 
 div.hero-container div.hero-text p {
     margin-top: 35px;
+}
+
+div.hero-container div.hero-text a.work-link {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #dd7826;
+}
+
+div.hero-container div.hero-text a.work-link:hover {
+    color: #955927;
 }
 
 div.hero-container div.hero-image {
