@@ -23,13 +23,12 @@ a {
 
 /* Hero */
 div.hero-container {
-    min-height: 100vh;
+    max-height: 100vh;
     width: 100vw;
     overflow: hidden;
     background:
         linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("./images/office.jpg")
-    ;
+        url("./images/office.jpg");
     background-color: black;
     background-size: cover;
     display: flex;
@@ -47,7 +46,7 @@ div.hero-container div.blur {
     z-index: 2;
 }
 
-div.hero-container > div.row {
+div.hero-container>div.row {
     width: 100%;
     min-height: 100vh;
     align-items: center;
@@ -100,5 +99,59 @@ div.hero-container div.hero-image {
 
 div.hero-container div.hero-image img {
     max-height: 85vh;
+    max-width: 45vw;
     filter: drop-shadow(10px 10px 20px black);
+}
+
+@media screen and (max-width: 1075px) {
+
+    div.hero-container div.hero-text span.sub-heading {
+        border-bottom: none;
+    }
+    
+    div.hero-container div.hero-text p {
+        margin-top: 15px;
+    }
+
+    div.hero-container div.hero-text {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    div.hero-container div.hero-image img {
+        width: 45vw;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    div.hero-container {
+        background: white;
+        overflow: auto;
+        max-height: none;
+    }
+
+    div.hero-container div.blur {
+        display: none;
+    }
+
+    div.hero-container div.row {
+        min-height: fit-content;
+    }
+
+    div.hero-container div.hero-image {
+        display: none;
+    }
+
+    div.hero-container div.hero-text {
+        height: fit-content;
+    }
+
+}
+
+@media screen and (orientation: portrait) and (min-width: 768px) and  {
+    
 }
