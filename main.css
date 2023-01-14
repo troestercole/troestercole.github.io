@@ -11,6 +11,11 @@ h1 {
     font-weight: 600 !important;
 }
 
+h2 {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 500 !important;
+}
+
 p {
     font-family: neue-haas-grotesk-display, sans-serif;
     font-weight: 400;
@@ -103,6 +108,8 @@ div.hero-container div.hero-image img {
     filter: drop-shadow(10px 10px 20px black);
 }
 
+/** Wide yet short screens: Text folds under do to set height. Change for min? */
+
 @media screen and (max-width: 1075px) {
 
     div.hero-container div.hero-text span.sub-heading {
@@ -150,4 +157,87 @@ div.hero-container div.hero-image img {
         height: fit-content;
     }
 
+}
+
+/** Portfolio **/
+
+div.portfolio {
+    position: relative;
+    width: 100%;
+    padding: 0px;
+}
+
+div.portfolio div.portfolio-entry {
+    padding: 5vh 8vw;
+}
+
+div.portfolio div.portfolio-text h2 {
+    font-size: 2.5rem;
+    line-height: 1;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(255, 255, 255, 0.25);
+}
+
+div.portfolio div.skydive-ia {
+    background-color: #f26523;
+}
+
+div.portfolio div.ozegovic-homes {
+    background-color: #f99d1b;
+}
+
+div.portfolio div.frontier-lawns {
+    background-color: #890b04;
+}
+
+div.portfolio div.catt {
+    background-color: #4c2a65;
+}
+
+div.portfolio div.portfolio-text {
+    z-index: 10;
+    color: white;
+}
+
+div.portfolio div.portfolio-image img {
+    width: 100%;
+    position: relative;
+    box-shadow: none;
+    transition: box-shadow 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+div.portfolio div.portfolio-image img:hover {
+    /* Fix This Box Shadow. Looks Bad Man */
+    box-shadow: 0px 0px 5px 1px #000;
+}
+
+div.portfolio div.portfolio-text span.date {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+div.portfolio div.portfolio-text a.work-link {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: white !important;
+}
+
+div.portfolio div.portfolio-text a.work-link:hover {
+    color: rgba(0, 0, 0, 0.801) !important;
+}
+
+@media screen and (max-width: 1075px) {
+
+    div.portfolio div.portfolio-entry {
+        padding: 5vh 30px;
+    }
+
+    div.portfolio div.portfolio-text img {
+        padding-bottom: 30px;
+    }
 }
