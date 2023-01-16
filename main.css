@@ -1,6 +1,7 @@
 /* Reset */
 body {
     margin: 0;
+    position: relative;
 }
 
 /* Imports */
@@ -24,6 +25,78 @@ p {
 
 a {
     transition: all 0.5s;
+}
+
+/** Socials **/
+div.socials-opener {
+    z-index: 100;
+    position: fixed;
+    bottom: 14px;
+    right: -20px;
+    height: 50px;
+    width: 70px;
+    padding-right: 20px;
+    background-color: #1b263b;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color ease-in-out 0.5s, right linear 0.5s;
+}
+
+div.socials-opener:hover {
+    background-color: #dd7826;
+}
+
+div.socials-opener svg {
+    fill: white;
+    height: 30px;
+}
+
+div.socials-opener.right {
+    right: 235px;
+}
+
+div.socials {
+    position: absolute;
+    z-index: 100;
+    position: fixed;
+    bottom: 14px;
+    right: -235px;
+    width: 235px;
+    background-color: #1b263b;
+    color: white;
+    padding: 30px;
+    border-top-left-radius: 5px;
+    transition: right linear 0.5s 0s;
+}
+
+div.socials.right {
+    right: 0px !important;
+}
+
+div.socials span {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+div.socials hr {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+div.socials a {
+    color: white;
+    text-decoration: none;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    display: block;
+}
+
+div.socials a:hover {
+    color: #dd7826
 }
 
 /* Hero */
@@ -169,6 +242,7 @@ div.portfolio {
 
 div.portfolio div.portfolio-entry {
     padding: 5vh 8vw;
+    margin: 0;
 }
 
 div.portfolio div.portfolio-text h2 {
