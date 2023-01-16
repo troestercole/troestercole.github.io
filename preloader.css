@@ -1,0 +1,39 @@
+/** Preloader **/
+div.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    display: flex;
+    background-repeat: no-repeat; 
+    background-color: #1b263b;
+    background-position: center;
+    align-items: center;
+ }
+
+ div.preloader:before {
+    content: url("preloader.svg");
+    display: block;
+    height: 400px;
+    margin: 0 auto;
+    width: 400px;
+ }
+
+ @media screen and (max-width: 500px) {
+    div.preloader svg {
+        display: block;
+        height: 200px;
+        width: 200px;
+    }
+ }
+
+ @media screen and (max-height: 500px) {
+    div.preloader svg {
+        display: block;
+        height: 200px;
+        width: 200px;
+    }
+ }
+ 
