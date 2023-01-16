@@ -27,6 +27,44 @@ a {
     transition: all 0.5s;
 }
 
+/** Preloader **/
+div.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    display: flex;
+    background-repeat: no-repeat; 
+    background-color: #1b263b;
+    background-position: center;
+    align-items: center;
+ }
+
+ div.preloader svg {
+    display: block;
+    height: 400px;
+    width: 400px;
+ }
+
+ @media screen and (max-width: 500px) {
+    div.preloader svg {
+        display: block;
+        height: 200px;
+        width: 200px;
+    }
+ }
+
+ @media screen and (max-height: 500px) {
+    div.preloader svg {
+        display: block;
+        height: 200px;
+        width: 200px;
+    }
+ }
+ 
+
 /** Socials **/
 div.socials-opener {
     z-index: 100;
@@ -56,7 +94,7 @@ div.socials-opener svg {
 }
 
 div.socials-opener.right {
-    right: 235px;
+    right: calc(235px - 21px);
 }
 
 div.socials {
@@ -74,7 +112,7 @@ div.socials {
 }
 
 div.socials.right {
-    right: 0px !important;
+    right: -1px !important;
 }
 
 div.socials span {
@@ -97,6 +135,12 @@ div.socials a {
 
 div.socials a:hover {
     color: #dd7826
+}
+
+@media screen and (max-width: 767px) {
+    div.socials, div.socials-opener {
+        bottom: 50px
+    }
 }
 
 /* Hero */
