@@ -27,6 +27,10 @@ a {
     transition: all 0.5s;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /** Socials **/
 div.socials-opener {
     z-index: 100;
