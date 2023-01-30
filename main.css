@@ -20,7 +20,7 @@ h2 {
 p {
     font-family: neue-haas-grotesk-display, sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.0625em;
 }
 
 a {
@@ -254,6 +254,7 @@ div.portfolio {
 div.portfolio div.portfolio-entry {
     padding: 5vh 8vw;
     margin: 0;
+    transition: all 0.5s;
 }
 
 div.portfolio div.portfolio-text h2 {
@@ -263,7 +264,7 @@ div.portfolio div.portfolio-text h2 {
     padding-bottom: 10px;
     border-bottom: 2px solid rgb(255, 255, 255, 0.25);
 }
-
+/*
 div.portfolio div.skydive-ia {
     background-color: #f26523;
 }
@@ -278,6 +279,14 @@ div.portfolio div.frontier-lawns {
 
 div.portfolio div.catt {
     background-color: #4c2a65;
+}
+*/
+div.portfolio-entry:nth-child(odd) {
+    background-color: #1b263b;
+}
+
+div.portfolio-entry:nth-child(even) {
+    background-color: #23324d;
 }
 
 div.portfolio div.portfolio-text {
@@ -313,7 +322,7 @@ div.portfolio div.portfolio-text a.work-link {
 }
 
 div.portfolio div.portfolio-text a.work-link:hover {
-    color: rgba(0, 0, 0, 0.801) !important;
+    color: #dd7826 !important;
 }
 
 @media screen and (max-width: 1075px) {
